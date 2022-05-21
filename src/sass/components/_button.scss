@@ -1,0 +1,21 @@
+%btn {
+  cursor: pointer;
+  font-family: inherit;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  outline: 0;
+  border: none;
+  box-shadow: none;
+  transition: all 0.3s ease;
+}
+
+%btn__primary {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+}
+
+%btn__primary:hover {
+  background: transparent;
+  color: var(--dark-color);
+  box-shadow: inset 0 0 0 0.2rem var(--primary-color);
+}
