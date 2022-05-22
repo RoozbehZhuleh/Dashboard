@@ -1,3 +1,7 @@
 @use "./base/_reset.scss";
-@use "./utilities/_mixins.scss";
+@use "./base/base";
+@use "./base/typography";
+@use "./utilities/utilities.scss";
 @use "./components/_button.scss";
+@use "./vendors/fontawesome.scss";
+@use "./layout/layout.scss";

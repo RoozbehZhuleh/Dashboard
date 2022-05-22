@@ -5,37 +5,10 @@
   align-items: $align;
 }
 
-@mixin btn {
+@mixin border($border-color, $radius, $outline-color: false) {
+  border: 0.5px solid $border-color;
+  border-radius: $radius;
+  @if $outline-color {
+    outline: 0.5px solid $outline-color;
+  }
 }
-
-$primary-color: #fff5f5;
-$secondary-color: rgb(1, 78, 213);
-$third-color: rgb(220, 233, 255);
-$accent-color: rgb(16, 40, 81);
-$light-color: #ffffff;
-$dark-color: #181131;
-$font-color: (
-  "primary": rgb(16, 40, 81),
-  "secondary": #f7f7f7,
-  "other": rgb(116, 120, 127),
-);
-$border-radius: (
-  "s": 0.5rem,
-  "m": 1rem,
-  "l": 1.5rem,
-);
-$font-size: (
-  "s": 1rem,
-  "m": 1.4rem,
-  "ml": 1.8rem,
-  "l": 2.2rem,
-  "xl": 3rem,
-  "2xl": 4rem,
-  "3xl": 5rem,
-);
-$font-weight: (
-  "thin": 300,
-  "regular": 450,
-  "medium": 550,
-  "bold": 700,
-);

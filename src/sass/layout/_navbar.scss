@@ -1,0 +1,5 @@
+@import "../utilities/mixins";
+
+#nav__link {
+  @include border(red, 20px);
+}

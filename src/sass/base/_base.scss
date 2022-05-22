@@ -1,0 +1,31 @@
+$primary-color: #fff5f5;
+$secondary-color: rgb(1, 78, 213);
+$third-color: rgb(220, 233, 255);
+$accent-color: rgb(16, 40, 81);
+$light-color: #ffffff;
+$dark-color: #181131;
+$font-color: (
+  "primary": rgb(16, 40, 81),
+  "secondary": #f7f7f7,
+  "other": rgb(154, 161, 170),
+);
+$border-radius: (
+  "s": 0.5rem,
+  "m": 1rem,
+  "l": 1.5rem,
+);
+$font-size: (
+  "s": 1rem,
+  "m": 1.4rem,
+  "ml": 1.8rem,
+  "l": 2rem,
+  "xl": 3rem,
+  "2xl": 4rem,
+  "3xl": 5rem,
+);
+$font-weight: (
+  "thin": 300,
+  "regular": 400,
+  "medium": 500,
+  "bold": 700,
+);
