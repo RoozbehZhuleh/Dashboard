@@ -1,0 +1,12 @@
+@import "../utilities/utilities";
+
+body {
+  background-color: $light-purple;
+  @include flex(row, center, center);
+  padding: 1rem;
+}
+
+.container {
+  @include flex(row, center, center);
+  background-color: $primary-color;
+}
