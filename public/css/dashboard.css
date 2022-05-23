@@ -12,7 +12,6 @@
 
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 body {
@@ -33,8 +32,7 @@ a {
 .container {
   width: 1400px;
   max-width: 90%;
-  margin-right: auto;
-  margin-left: auto;
+  margin: auto;
   padding: 0 1rem;
 }
 
@@ -44,6 +42,41 @@ html {
 }
 
 #nav__link {
-  border: 0.5px solid red;
-  border-radius: 20px;
+  cursor: pointer;
+}
+
+.logo-sq {
+  position: relative;
+  width: 3rem;
+  height: 3rem;
+  background-color: #e9e3fe;
+  transform: rotate(45deg);
+  z-index: 10000;
+}
+.logo-sq::after {
+  content: "";
+  background-color: #8a70d6;
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  left: 1.7rem;
+  top: -1.5rem;
+  z-index: -2000;
+}
+
+body {
+  background-color: #e9e3fe;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #fcfbfc;
 }

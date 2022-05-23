@@ -8,12 +8,12 @@
     <title>Document</title>
 </head>
 <body>
-<aside id="navbar">
-    <div class="container">
+<div class="container">
+    <aside id="left">
         <nav id="nav">
-            <figure id="nav__logo">
-                <img src="" alt="">
-            </figure>
+            <div id="nav__logo">
+                <div class="logo-sq"></div>   
+            </div>
             <ul id="nav__links">
                 <li id="nav__link">Dashboard</li>
                 <li id="nav__link">Courses</li>
@@ -30,11 +30,10 @@
                 </div>
             </div>
         </nav>  
-    </div>
-</aside>
 
-<main id="main">
-    <div class="container">
+    </aside>
+
+    <main id="center">
         <section class="main">
             <div class="main__title">
                 <h1 class="main__title--left">Dashboard</h1>
@@ -98,7 +97,7 @@
 
                         <div class="course__avatars photography__avatars">
                             <div class="avatars">
-                                <img src="./assets/3523415.png" alt="">
+                                <img src="" alt="">
                                 <img src="" alt="">
                                 <img src="" alt="">
                             </div>
@@ -121,7 +120,42 @@
                 </div>
             </div>
         </section>
-    </div>
-</main>
+    </main>
+
+    <aside id="right">
+        <section class="pch">
+            <div class="profile">
+                <div class="profile__title">
+                    <h2>profile</h2>
+                    <button><i></i></button>
+                </div>
+                <div class="profile__wrapper">
+                    <div class="profile__img">
+                        <img src="" alt="">
+                    </div>
+                    <div class="profile__text">
+                       <div class="profile__name">
+                           <h3>Esther Howard</h3> 
+                           <i></i>
+                       </div>
+                        <p class="profile__level">Elementary</p>
+                    </div>  
+                </div>
+            </div>
+            <div class="calendar">
+                <div class="calendar__title">
+                    <h3>May 2022</h3>
+                    <div class="calendar__arrows">
+                        <i></i>
+                        <i></i>
+                    </div>
+                </div>
+                <div class="calendar__body">
+                    <!-- wtf! griiids -->
+                </div>
+            </div>
+        </section>
+    </aside>
+</div>
 </body>
 </html>
