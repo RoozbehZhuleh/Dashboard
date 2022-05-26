@@ -1,7 +1,40 @@
 @import "../utilities/utilities";
 
-#nav__link {
-  cursor: pointer;
+.nav {
+  @include flex(column, flex-start, flex-start);
+  gap: 5rem;
+
+  &__links {
+    @include flex(column, flex-start, flex-start);
+    gap: 2rem;
+
+    .nav__link {
+      @include flex(row, flex-start, center);
+      gap: 1rem;
+      transition: all 0.1s linear;
+      padding: 1rem;
+      width: 15rem;
+      border-radius: map-get($border-radius, "m");
+      cursor: pointer;
+      // height: 5rem;
+
+      i {
+        color: map-get($font-color, "other");
+      }
+
+      &:hover {
+        color: map-get($font-color, "primary");
+        background-color: $light-purple;
+      }
+    }
+  }
+
+  &__subscription {
+    width: 28ch;
+    img {
+      width: 20rem;
+    }
+  }
 }
 
 .logo-sq {

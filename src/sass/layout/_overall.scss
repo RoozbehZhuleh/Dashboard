@@ -3,10 +3,12 @@
 body {
   background-color: $light-purple;
   @include flex(row, center, center);
-  padding: 1rem;
+  padding: 3rem;
 }
 
 .container {
-  @include flex(row, center, center);
+  @include flex(row, space-between, center);
+  @include border(none, 2rem);
   background-color: $primary-color;
+  padding: 3rem;
 }
