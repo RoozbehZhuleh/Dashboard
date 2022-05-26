@@ -62,11 +62,9 @@ html {
   gap: 1rem;
   transition: all 0.1s linear;
   padding: 1rem;
-  width: 15rem;
+  width: 100%;
   border-radius: 1rem;
   cursor: pointer;
-}
-.nav__links .nav__link i {
   color: rgb(116, 120, 127);
 }
 .nav__links .nav__link:hover {
@@ -75,9 +73,15 @@ html {
 }
 .nav__subscription {
   width: 28ch;
+  background-color: #e9e3fe;
+  display: grid;
+  place-items: center;
+  border-radius: 1rem;
+  padding: 1rem;
 }
 .nav__subscription img {
-  width: 20rem;
+  width: 21rem;
+  border-radius: 1rem;
 }
 
 .logo-sq {
@@ -117,4 +121,16 @@ body {
   border-radius: 2rem;
   background-color: #fcfbfc;
   padding: 3rem;
+}
+
+.left {
+  width: 20%;
+}
+
+.right {
+  width: 20%;
+}
+
+.center {
+  width: 60%;
 }

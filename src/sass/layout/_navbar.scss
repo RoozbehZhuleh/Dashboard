@@ -13,14 +13,11 @@
       gap: 1rem;
       transition: all 0.1s linear;
       padding: 1rem;
-      width: 15rem;
+      width: 100%;
       border-radius: map-get($border-radius, "m");
       cursor: pointer;
+      color: map-get($font-color, "other");
       // height: 5rem;
-
-      i {
-        color: map-get($font-color, "other");
-      }
 
       &:hover {
         color: map-get($font-color, "primary");
@@ -31,8 +28,15 @@
 
   &__subscription {
     width: 28ch;
+    background-color: $light-purple;
+    display: grid;
+    place-items: center;
+    border-radius: map-get($border-radius, "m");
+    padding: 1rem;
+
     img {
-      width: 20rem;
+      width: 21rem;
+      border-radius: map-get($border-radius, "m");
     }
   }
 }
