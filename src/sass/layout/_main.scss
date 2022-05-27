@@ -1,0 +1,19 @@
+@import "../utilities/utilities";
+
+.main {
+  @include flex(column, flex-end, flex-start);
+  gap: 10rem
+}
+
+.avatars{
+    img{
+        width: 2.5rem;
+        @include border(none, 5rem);
+    }
+}
+
+.course__img{
+    img{
+        width: 10rem;
+    }
+}
