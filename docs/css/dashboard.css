@@ -48,14 +48,86 @@ html {
   gap: 10rem;
 }
 
+.courses {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.main__courses__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.course {
+  padding: 2rem;
+  width: 20rem;
+  height: 25rem;
+}
+
 .avatars img {
-  width: 2.5rem;
+  width: 3rem;
   border: 0.5px solid none;
   border-radius: 5rem;
 }
 
+.course__img {
+  width: 15rem;
+  display: grid;
+  place-items: center;
+}
 .course__img img {
-  width: 10rem;
+  width: 12rem;
+  padding: 1rem;
+}
+
+.geography {
+  background-color: #fff0e1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  border: 0.5px solid none;
+  border-radius: 2rem;
+}
+.geography .geo__img {
+  background-color: #fcab5e;
+  border: 0.5px solid none;
+  border-radius: 2rem;
+}
+
+.js {
+  background-color: #e9e3fe;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  border: 0.5px solid none;
+  border-radius: 2rem;
+}
+.js .js__img {
+  background-color: #8a70d6;
+  border: 0.5px solid none;
+  border-radius: 2rem;
+}
+
+.photography {
+  background-color: #e5f3fe;
+  border: 0.5px solid none;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.photography .photography__img {
+  background-color: #579be4;
+  border: 0.5px solid none;
+  border-radius: 2rem;
 }
 
 .nav {
@@ -64,6 +136,13 @@ html {
   justify-content: flex-start;
   align-items: flex-start;
   gap: 5rem;
+}
+.nav__logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
 }
 .nav__links {
   display: flex;
@@ -135,6 +214,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   border: 0.5px solid none;
   border-radius: 1.5rem;
   background-color: #fcfbfc;

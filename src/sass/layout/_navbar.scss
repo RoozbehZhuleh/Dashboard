@@ -4,6 +4,11 @@
   @include flex(column, flex-start, flex-start);
   gap: 5rem;
 
+  &__logo {
+    @include flex(row, space-between, center);
+    gap: 4rem;
+  }
+
   &__links {
     @include flex(column, flex-start, flex-start);
     gap: 2rem;
