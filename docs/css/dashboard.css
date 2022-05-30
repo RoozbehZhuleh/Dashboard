@@ -47,36 +47,93 @@ html {
   align-items: flex-start;
   gap: 10rem;
 }
-
-.courses {
+.main__title {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-start;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
-
+.main__title__right input {
+  border: none;
+  outline: none;
+  background-color: white;
+  font-size: 1.8rem;
+  padding: 1rem;
+}
+.main__title__right .notifications {
+  background: white;
+  border: none;
+  outline: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: rgb(116, 120, 127);
+}
 .main__courses__wrapper {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: flex-start;
   gap: 1rem;
 }
 
+.courses {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
 .course {
-  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0.5rem;
+  padding: 1.5rem 1.5rem 3rem 1.5rem;
   width: 20rem;
-  height: 25rem;
+}
+.course__text {
+  padding: 0.5rem 0 0 0;
+}
+.course__text h3 {
+  font-size: 1.5rem;
+  font-weight: 520;
+}
+.course__text p {
+  font-size: 1.2rem;
+}
+
+.course__avatars {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 5rem 0 0 0;
+}
+.course__avatars .continue {
+  font-size: 1.8rem;
+  color: #f7f7f7;
+  padding: 0.5rem 1rem;
+  border: 0.5px solid none;
+  border-radius: 0.8rem;
+  cursor: pointer;
+}
+
+.geography__button {
+  background-color: #fcab5e;
 }
 
 .avatars img {
-  width: 3rem;
   border: 0.5px solid none;
   border-radius: 5rem;
+  width: 3rem;
 }
 
 .course__img {
   width: 15rem;
+  height: 15rem;
   display: grid;
   place-items: center;
 }
@@ -128,6 +185,25 @@ html {
   background-color: #579be4;
   border: 0.5px solid none;
   border-radius: 2rem;
+}
+
+.mycourses__grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 5fr 2fr 2fr 2fr;
+  grid-template-rows: repeat(6, 1fr);
+  gap: 1rem;
+}
+
+.mycourse__logo {
+  border: 0.5px solid none;
+  border-radius: 0.5rem;
+  display: grid;
+  color: #8a70d6;
+  background-color: #e9e3fe;
+  padding: 1.5rem;
+  font-size: 1.8rem;
+  place-items: center;
 }
 
 .nav {

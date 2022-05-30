@@ -3,35 +3,89 @@
 .main {
   @include flex(column, flex-end, flex-start);
   gap: 10rem;
+
+  &__title {
+    @include flex(row, space-between, center);
+    // gap:2rem;
+    width: 100%;
+
+    &__right {
+      input {
+        border: none;
+        outline: none;
+        background-color: #ffff;
+        font-size: map-get($font-size, "ml");
+        padding: 1rem;
+      }
+
+      .notifications {
+        background: #ffff;
+        border: none;
+        outline: none;
+        font-size: map-get($font-size, "ml");
+        cursor: pointer;
+        color: map-get($font-color, "other");
+      }
+    }
+  }
+
+  &__courses__wrapper {
+    @include flex(row, center, flex-start);
+    gap: 1rem;
+  }
 }
 
-
-.courses{
-  @include flex(column, flex-end, flex-start)
+.courses {
+  @include flex(column, flex-start, flex-start);
 }
 
-.main__courses__wrapper{
-  @include flex(row, flex-end, flex-start);
-  gap: 1rem;
-}
-
-
-.course{
-  padding: 2rem;
+.course {
+  @include flex(column, flex-start, flex-start);
+  gap: 0.5rem;
+  padding: 1.5rem 1.5rem 3rem 1.5rem;
   width: 20rem;
-  height: 25rem;
+
+  &__text {
+    padding: 0.5rem 0 0 0;
+    h3 {
+      font-size: 1.5rem;
+      font-weight: map-get($font-weight, "course-title");
+    }
+    p {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+.course__avatars {
+  @include flex(row, space-between, center);
+  width: 100%;
+  padding: 5rem 0 0 0;
+
+  .continue {
+    font-size: map-get($font-size, "ml");
+    color: map-get($font-color, "secondary");
+    padding: 0.5rem 1rem;
+    @include border(none, 0.8rem);
+    cursor: pointer;
+  }
+}
+
+.geography__button {
+  background-color: $dark-orange;
 }
 
 .avatars {
   img {
-    width:3rem;
     @include border(none, 5rem);
+    width: 3rem;
   }
 }
 
 .course__img {
   width: 15rem;
-  display:grid;
+  height: 15rem;
+  display: grid;
   place-items: center;
 
   img {
@@ -44,8 +98,8 @@
   background-color: $light-orange;
   @include flex(column, center, flex-start);
   @include border(none, 2rem);
-  
-  .geo__img{
+
+  .geo__img {
     background-color: $dark-orange;
     @include border(none, 2rem);
   }
@@ -55,8 +109,8 @@
   background-color: $light-purple;
   @include flex(column, center, flex-start);
   @include border(none, 2rem);
-  
-  .js__img{
+
+  .js__img {
     background-color: $dark-purple;
     @include border(none, 2rem);
   }
@@ -66,9 +120,33 @@
   background-color: $light-blue;
   @include border(none, 2rem);
   @include flex(column, center, flex-start);
-  
-  .photography__img{
+
+  .photography__img {
     background-color: $dark-blue;
     @include border(none, 2rem);
   }
+}
+
+.mycourses__grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 5fr 2fr 2fr 2fr;
+  grid-template-rows: repeat(6, 1fr);
+  gap: 1rem;
+
+  //  grid-template-areas:
+  //   "a a a a b b b b"
+  //   "c c c c d d d d"
+  //   "e e e e f f f f"
+  //   "g g g g h h h h";
+}
+
+.mycourse__logo {
+  @include border(none, 0.5rem);
+  display: grid;
+  color: $dark-purple;
+  background-color: $light-purple;
+  padding: 1.5rem;
+  font-size: map-get($font-size, "ml");
+  place-items: center;
 }
