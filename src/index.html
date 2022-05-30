@@ -6,7 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/dashboard.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Document</title>
+    <script src="./app.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <link rel="stylesheet" type="text/css" href="https://npmcdn.com/flatpickr/dist/themes/material_orange.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>Dashboard</title>
 </head>
 <body>
 <div class="container">
@@ -122,10 +131,10 @@
                 <div class="mycourses__grid">
                     <!-- <div class="table__head"> -->
                         <div></div>
-                        <p>Course name</p>
-                        <p>Start</p>
-                        <p>Rate</p>
-                        <p>Level</p>
+                        <p class="table__title">Course name</p>
+                        <p class="table__title">Start</p>
+                        <p class="table__title">Rate</p>
+                        <p class="table__title">Level</p>
                     <!-- </div> -->
 
                     <!-- <div class="web-design"> -->
@@ -133,22 +142,6 @@
                         <div class="web-design__text">
                             <h3>Web Design</h3>
                             <p>10 lessons</p>
-                        </div>
-                        <div class="web-design__date">
-                            <h3>May 12</h3>
-                        </div>
-                        <div class="web-design__rate">
-                            <h3>4.8</h3>
-                        </div>
-                        <div class="web-design__level">
-                            <h3>Elementary</h3>
-                        </div>
-                    <!-- </div> -->
-                    <!-- <div class="web-dev"> -->
-                        <div class="web-dev__logo"><i class="fa-solid fa-code mycourse__logo"></i></div>
-                        <div class="mycourse__text">
-                            <h3>Development Basics</h3>
-                            <p>8 lessons</p>
                         </div>
                         <div class="mycourse__date">
                             <h3>May 12</h3>
@@ -160,51 +153,67 @@
                             <h3>Elementary</h3>
                         </div>
                     <!-- </div> -->
-                    <!-- <div class="web-design"> -->
-                        <div class="web-design__logo"><i class="fa-regular fa-square mycourse__logo"></i></div>
-                        <div class="web-design__text">
-                            <h3>Web Design</h3>
-                            <p>10 lessons</p>
+                    <!-- <div class="web-dev"> -->
+                        <div class="web-dev__logo"><i class="fa-solid fa-code mycourse__logo"></i></div>
+                        <div class="mycourse__text">
+                            <h3>Development Basics</h3>
+                            <p>8 lessons</p>
                         </div>
-                        <div class="web-design__date">
-                            <h3>May 12</h3>
+                        <div class="mycourse__date">
+                            <h3>May 14</h3>
                         </div>
-                        <div class="web-design__rate">
+                        <div class="mycourse__rate">
                             <h3>4.8</h3>
                         </div>
-                        <div class="web-design__level">
+                        <div class="mycourse__level">
+                            <h3>Intermediate</h3>
+                        </div>
+                    <!-- </div> -->
+                    <!-- <div class="python"> -->
+                        <div class="python__logo"><i class="fa-brands fa-python mycourse__logo"></i></div>
+                        <div class="pymycourse__text">
+                            <h3>Data with Python</h3>
+                            <p>5 lessons</p>
+                        </div>
+                        <div class="mycourse__date">
+                            <h3>July 3</h3>
+                        </div>
+                        <div class="mycourse__rate">
+                            <h3>3.5</h3>
+                        </div>
+                        <div class="mycourse__level">
+                            <h3>Intermediate</h3>
+                        </div>
+                    <!-- </div> -->
+                    <!-- <div class="html"> -->
+                        <div class="html__logo"><i class="fa-brands fa-html5 mycourse__logo"></i></div>
+                        <div class="web-demycourse__text">
+                            <h3>HTML Basics</h3>
+                            <p>11 lessons</p>
+                        </div>
+                        <div class="mycourse__date">
+                            <h3>May 12</h3>
+                        </div>
+                        <div class="mycourse__rate">
+                            <h3>4.4</h3>
+                        </div>
+                        <div class=mycourse__level">
                             <h3>Elementary</h3>
                         </div>
                     <!-- </div> -->
-                    <!-- <div class="web-design"> -->
-                        <div class="web-design__logo"><i class="fa-regular fa-square mycourse__logo"></i></div>
+                    <!-- <div class="js"> -->
+                        <div class="web-design__logo"><i class="fa-brands fa-js-square mycourse__logo"></i></div>
                         <div class="web-design__text">
                             <h3>Web Design</h3>
                             <p>10 lessons</p>
                         </div>
-                        <div class="web-design__date">
+                        <div class="mycourse__date">
                             <h3>May 12</h3>
                         </div>
-                        <div class="web-design__rate">
+                        <div class="mycourse__rate">
                             <h3>4.8</h3>
                         </div>
-                        <div class="web-design__level">
-                            <h3>Elementary</h3>
-                        </div>
-                    <!-- </div> -->
-                    <!-- <div class="web-design"> -->
-                        <div class="web-design__logo"><i class="fa-regular fa-square mycourse__logo"></i></div>
-                        <div class="web-design__text">
-                            <h3>Web Design</h3>
-                            <p>10 lessons</p>
-                        </div>
-                        <div class="web-design__date">
-                            <h3>May 12</h3>
-                        </div>
-                        <div class="web-design__rate">
-                            <h3>4.8</h3>
-                        </div>
-                        <div class="web-design__level">
+                        <div class="mycourse__level">
                             <h3>Elementary</h3>
                         </div>
                     <!-- </div> -->
@@ -238,14 +247,10 @@
             <div class="calendar">
                 <div class="calendar__title">
                     <h3>May 2022</h3>
-                    <div class="calendar__arrows">
-                        <i></i>
-                        <i></i>
-                    </div>
                 </div>
-                <div class="calendar__body">
+                <input class="calendar__body">
                     <!-- wtf! griiids -->
-                </div>
+                </input>
             </div>
         </section>
     </aside>

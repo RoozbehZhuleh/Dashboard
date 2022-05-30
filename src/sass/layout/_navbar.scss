@@ -1,8 +1,16 @@
 @import "../utilities/utilities";
 
+.left {
+  height: 100%;
+  @include flex(column, center, flex-start);
+}
+
 .nav {
-  @include flex(column, flex-start, flex-start);
-  gap: 5rem;
+  @include flex(column, space-between, flex-start);
+  height: 100%;
+  // gap: 10rem;
+  // position: relative;
+  // top: -5rem;
 
   &__logo {
     @include flex(row, space-between, center);
@@ -22,6 +30,7 @@
       border-radius: map-get($border-radius, "m");
       cursor: pointer;
       color: map-get($font-color, "other");
+      font-size: map-get($font-size, "ml");
       // height: 5rem;
 
       &:hover {
@@ -42,6 +51,19 @@
     img {
       width: 21rem;
       border-radius: map-get($border-radius, "m");
+      padding: 0 0 2rem 0;
+    }
+
+    .subscription__text {
+      padding: 2rem;
+      h3 {
+        font-size: map-get($font-size, "l");
+        font-weight: map-get($font-weight, "regular");
+      }
+      p {
+        color: map-get($font-color, "other");
+        padding: 0.5rem 0 0 0;
+      }
     }
   }
 }
