@@ -142,11 +142,12 @@
 }
 
 .mycourse__logo {
+  width: 5rem;
   @include border(none, 0.5rem);
   display: grid;
   color: $dark-purple;
   background-color: $light-purple;
   padding: 1.5rem;
-  font-size: map-get($font-size, "ml");
+  font-size: map-get($font-size, "l");
   place-items: center;
 }

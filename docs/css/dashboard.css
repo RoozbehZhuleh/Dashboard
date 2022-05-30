@@ -196,13 +196,14 @@ html {
 }
 
 .mycourse__logo {
+  width: 5rem;
   border: 0.5px solid none;
   border-radius: 0.5rem;
   display: grid;
   color: #8a70d6;
   background-color: #e9e3fe;
   padding: 1.5rem;
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   place-items: center;
 }
 
