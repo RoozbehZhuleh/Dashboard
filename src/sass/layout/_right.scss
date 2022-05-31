@@ -53,13 +53,15 @@
 }
 
 .pch{
-  // width: 80%;
+  width: 90%;
   @include flex(column, space-between, center);
   gap: 5vh;
   height: 99%;
   background-color: $light-purple;
   padding:1rem;
-  border-radius:2rem
+  transition: all .2s linear;
+  animation: blob 20s  4s infinite forwards;
+  border-radius: 2rem
 
 }
 
@@ -98,6 +100,19 @@
           width: 60%;
         }
     }
+
+    &__text{
+      p{
+        color: map-get($font-color, "primary" )
+      }
+      span{
+        color: map-get($font-color, "other" )
+      }
+    }
+
+    &:hover{
+      color: white;
+    }
     
 }
 &__2{
@@ -112,6 +127,15 @@
           width: 60%;
         }
     }
+
+    &__text{
+      p{
+        color: map-get($font-color, "primary" )
+      }
+      span{
+        color: map-get($font-color, "other" )
+      }
+    }
 }
 &__3{
     @include flex(row, space-between, center);
@@ -124,6 +148,15 @@
         svg{
           width: 60%;
         }
+    }
+
+    &__text{
+      p{
+        color: map-get($font-color, "primary" )
+      }
+      span{
+        color: map-get($font-color, "other" )
+      }
     }
 }
 }

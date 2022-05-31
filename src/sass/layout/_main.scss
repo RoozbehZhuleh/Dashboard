@@ -1,7 +1,7 @@
 @import "../utilities/utilities";
 
 .center{
-  height: 100%;
+  height: 80%;
 }
 
 .main {
@@ -79,6 +79,9 @@
       font-size: 1.2rem;
     }
   }
+
+
+  
 }
 
 .course__avatars {
@@ -130,6 +133,12 @@
   background-color: $light-orange;
   @include flex(column, center, flex-start);
   @include border(none, 2rem);
+  transition: all 0.2s linear;
+  // z-index: 20;
+  // &:hover{
+  //   transform: translateY(0.5rem);
+  // }
+
 
   .geo__img {
     background-color: $dark-orange;
@@ -141,6 +150,9 @@
   background-color: $light-purple;
   @include flex(column, center, flex-start);
   @include border(none, 2rem);
+  // &:hover{
+  //   transform: translateY(0.5rem);
+  // }
 
   .js__img {
     background-color: $dark-purple;
@@ -152,6 +164,10 @@
   background-color: $light-blue;
   @include border(none, 2rem);
   @include flex(column, center, flex-start);
+
+  // &:hover{
+  //   transform: translateY(0.5rem);
+  // }
 
   .photography__img {
     background-color: $dark-blue;
@@ -250,17 +266,17 @@
 }
 
 .mycourse__date{
-  font-size: map-get($font-size, "ml" );
+  font-size: map-get($font-size, "m" );
       font-weight: map-get($font-weight, "regular");
       color: map-get($font-color, "primary")
 }
 .mycourse__rate{
-  font-size: map-get($font-size, "ml" );
+  font-size: map-get($font-size, "m" );
       font-weight: map-get($font-weight, "regular");
       color: map-get($font-color, "primary")
 }
 .mycourse__level{
-  font-size: map-get($font-size, "ml" );
+  font-size: map-get($font-size, "m" );
       font-weight: map-get($font-weight, "regular");
       color: map-get($font-color, "primary")
 }

@@ -4,11 +4,28 @@ flatpickr(".calendar__body", {
     dateFormat: "Y-m-d H:i",
 });
 
-const navLink = document.querySelector(".nav__link");
+const navLink = document.querySelectorAll(".nav__link");
+const nav = document.querySelector(".nav");
+const body = document.querySelector("body");
+const geo = document.querySelector(".geography");
+const js = document.querySelector(".js");
+const photography = document.querySelector(".photography");
+const course = document.querySelector(".course");
 
-navLink.addEventListener("click", () => {
-navLink.classList.add(".active");
-})
+
+navLink.forEach(i => {
+    i.addEventListener("click", function () {
+        i.classList.toggle("active");
+
+    })
+});
+
+
+// course.addEventListener("mouseover", () => {
+//     course.style.transform = "translateY(5rem)";
+//     // geo.style.height = "35rem";
+
+// })
 
 
 document.querySelector(".nav__subscription").style.setProperty('--animate-duration', '3s');
@@ -21,3 +38,5 @@ document.querySelector(".nav__links__chats").style.setProperty('--animate-durati
 document.querySelector(".nav__links__grades").style.setProperty('--animate-duration', '1.6s');
 document.querySelector(".nav__links__schedule").style.setProperty('--animate-duration', '1.8s');
 document.querySelector(".nav__links__settings").style.setProperty('--animate-duration', '2s');
+
+
