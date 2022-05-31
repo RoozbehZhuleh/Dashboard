@@ -7,11 +7,14 @@
   &__title {
     @include flex(row, space-between, center);
     // gap:2rem;
-    width: 100%;
+    width: 80%;
 
     &__right {
       input {
+        border-radius: 1rem;
         border: none;
+        outline: none;
+        margin: 0 0.5rem 0 0;
         outline: none;
         background-color: #ffff;
         font-size: map-get($font-size, "ml");
@@ -37,6 +40,7 @@
 
 .courses {
   @include flex(column, flex-start, flex-start);
+  width: 70rem;
 
   &__title {
     margin: 0 0 1rem 0;
@@ -47,7 +51,7 @@
   @include flex(column, flex-start, flex-start);
   gap: 0.5rem;
   padding: 1.5rem 1.5rem 3rem 1.5rem;
-  width: 20rem;
+  width: 22rem;
 
   &__text {
     padding: 0.5rem 0 0 0;
@@ -139,8 +143,19 @@
   }
 }
 
+
+.mycourses{
+  width: 80%;
+
+
+  &__title{
+    width: 100%;
+    @include flex(row, space-between, flex-start)
+  }
+}
+
 .mycourses__grid {
-  width: 100%;
+  width: 90%;
   display: grid;
   grid-template-columns: 1fr 5fr 2fr 2fr 2fr;
   grid-template-rows: repeat(6, 1fr);
@@ -159,11 +174,30 @@
 
 .mycourse__logo {
   width: 5rem;
-  @include border(none, 0.5rem);
+  @include border(none, 1rem);
   display: grid;
-  color: $dark-purple;
-  background-color: $light-purple;
   padding: 1.5rem;
   font-size: map-get($font-size, "l");
   place-items: center;
+}
+
+.web-design__logo{
+  color: $dark-purple;
+  background-color: $light-purple;
+}
+.web-dev__logo{
+  color: $dark-blue;
+  background-color: $light-blue;
+}
+.python__logo{
+  color: $dark-pink;
+  background-color: $light-pink;
+}
+.html__logo{
+  color: $dark-purple;
+  background-color: $light-purple;
+}
+.js__logo{
+  color: $dark-orange;
+  background-color: $light-orange;
 }

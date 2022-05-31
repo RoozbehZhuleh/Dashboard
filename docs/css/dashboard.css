@@ -30,7 +30,7 @@ a {
 
 .container {
   height: 100rem;
-  width: 1200px;
+  width: 1400px;
   max-width: 95%;
   margin: 0 auto;
   padding: 1rem;
@@ -53,10 +53,13 @@ html {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 80%;
 }
 .main__title__right input {
+  border-radius: 1rem;
   border: none;
+  outline: none;
+  margin: 0 0.5rem 0 0;
   outline: none;
   background-color: white;
   font-size: 1.8rem;
@@ -83,6 +86,7 @@ html {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  width: 70rem;
 }
 .courses__title {
   margin: 0 0 1rem 0;
@@ -95,7 +99,7 @@ html {
   align-items: flex-start;
   gap: 0.5rem;
   padding: 1.5rem 1.5rem 3rem 1.5rem;
-  width: 20rem;
+  width: 22rem;
 }
 .course__text {
   padding: 0.5rem 0 0 0;
@@ -199,8 +203,19 @@ html {
   border-radius: 2rem;
 }
 
-.mycourses__grid {
+.mycourses {
+  width: 80%;
+}
+.mycourses__title {
   width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.mycourses__grid {
+  width: 90%;
   display: grid;
   grid-template-columns: 1fr 5fr 2fr 2fr 2fr;
   grid-template-rows: repeat(6, 1fr);
@@ -213,13 +228,36 @@ html {
 .mycourse__logo {
   width: 5rem;
   border: 0.5px solid none;
-  border-radius: 0.5rem;
+  border-radius: 1rem;
   display: grid;
-  color: #8a70d6;
-  background-color: #e9e3fe;
   padding: 1.5rem;
   font-size: 2.2rem;
   place-items: center;
+}
+
+.web-design__logo {
+  color: #8a70d6;
+  background-color: #e9e3fe;
+}
+
+.web-dev__logo {
+  color: #579be4;
+  background-color: #e5f3fe;
+}
+
+.python__logo {
+  color: #E193D8;
+  background-color: #FFE3FB;
+}
+
+.html__logo {
+  color: #8a70d6;
+  background-color: #e9e3fe;
+}
+
+.js__logo {
+  color: #fcab5e;
+  background-color: #fff0e1;
 }
 
 .left {
@@ -332,4 +370,92 @@ body {
   border-radius: 1.5rem;
   background-color: #fcfbfc;
   padding: 3rem;
+}
+
+.single-chart {
+  width: 33%;
+  justify-content: space-around;
+}
+
+.circular-chart {
+  display: block;
+  margin: 10px auto;
+  max-width: 80%;
+  max-height: 250px;
+}
+
+.circle-bg {
+  fill: none;
+  stroke: #eee;
+  stroke-width: 3.8;
+}
+
+.circle {
+  fill: none;
+  stroke-width: 2.8;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+.circular-chart .circle {
+  stroke: #579be4;
+}
+
+.percentage {
+  fill: #666;
+  font-family: sans-serif;
+  font-size: 0.5em;
+  text-anchor: middle;
+}
+
+.homework {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+}
+.homework__1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.homework__1__percent {
+  width: 22rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.homework__2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.homework__2__percent {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 22rem;
+}
+.homework__3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.homework__3__percent {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 22rem;
 }
