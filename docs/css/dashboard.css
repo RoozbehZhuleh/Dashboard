@@ -114,7 +114,7 @@ html {
   align-items: flex-start;
 }
 .courses__title {
-  margin: 0 0 1rem 0;
+  margin: 1rem 0 1rem 0;
   font-size: 2rem;
   font-weight: 450;
   color: rgb(35, 35, 35);
@@ -126,8 +126,8 @@ html {
   justify-content: flex-start;
   align-items: flex-start;
   gap: 0.5rem;
-  padding: 1.5rem 1.5rem 1rem 1.5rem;
-  width: 20rem;
+  padding: 1rem;
+  width: 18rem;
 }
 .course__text {
   display: flex;
@@ -151,7 +151,7 @@ html {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 5rem 0 0 0;
+  padding: 3rem 0 0 0;
 }
 .course__avatars .continue {
   font-size: 1.6rem;
@@ -182,7 +182,7 @@ html {
 
 .course__img {
   width: 100%;
-  height: 13rem;
+  height: 11rem;
   display: grid;
   place-items: center;
 }
@@ -434,10 +434,13 @@ html {
   background-color: #e9e3fe;
   padding: 10rem 1rem 1rem 1rem;
   margin: 10rem 0 0 0;
-  border-radius: 2rem h3;
-  border-radius-font-size: 2rem;
-  border-radius-font-weight: 450;
-  border-radius-width: 100%;
+  border-radius: 2rem;
+  animation: blob 15s infinite 3s forwards;
+}
+.nav__subscription .subscription__text h3 {
+  font-size: 2rem;
+  font-weight: 450;
+  width: 100%;
 }
 .nav__subscription .subscription__text p {
   color: rgb(116, 120, 127);
@@ -498,7 +501,6 @@ body {
   align-items: center;
   border: 0.5px solid none;
   border-radius: 1.5rem;
-  gap: 1rem;
   flex-wrap: wrap;
   background-color: #fcfbfc;
 }

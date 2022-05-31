@@ -10,19 +10,18 @@
   @include flex(column, space-between, flex-start);
   height: 90%;
   // gap: 3rem;
-  
 
   &__logo {
     @include flex(row, space-between, center);
     gap: 4rem;
-    cursor:pointer;
+    cursor: pointer;
     padding: 1rem 0 1rem 0;
     margin: 0 0 2rem 0;
 
-    h2{
-      font-size: map-get($font-size, "ml" );
+    h2 {
+      font-size: map-get($font-size, "ml");
       font-weight: map-get($font-weight, "regular");
-      color: map-get($font-color, "primary")
+      color: map-get($font-color, "primary");
     }
   }
 
@@ -42,7 +41,7 @@
       font-size: map-get($font-size, "ml");
       // height: 5rem;
 
-      &::after{
+      &::after {
         content: "";
         position: absolute;
         top: 85%;
@@ -52,7 +51,7 @@
         transition: all 0.2s linear;
       }
 
-      &:hover:after{
+      &:hover:after {
         color: map-get($font-color, "primary");
         background-color: $dark-purple;
         width: 80%;
@@ -67,7 +66,7 @@
     place-items: center;
     border-radius: map-get($border-radius, "m");
     padding: 1rem;
-    
+
     img {
       position: absolute;
       top: -4%;
@@ -75,7 +74,7 @@
       border-radius: map-get($border-radius, "m");
       padding: 0 0 2rem 0;
     }
-    
+
     .subscription__text {
       @include flex(column, center, center);
       width: 22rem;
@@ -83,8 +82,9 @@
       background-color: $light-purple;
       padding: 10rem 1rem 1rem 1rem;
       margin: 10rem 0 0 0;
-      border-radius: 2rem
-      // width: 90%;
+      border-radius: 2rem;
+      animation: blob 15s infinite 3s forwards;
+
       h3 {
         font-size: map-get($font-size, "l");
         font-weight: map-get($font-weight, "regular");
@@ -95,9 +95,9 @@
         padding: 0.5rem 0 0 0;
       }
     }
-    
-    button{
-      background-color:$dark-purple;
+
+    button {
+      background-color: $dark-purple;
       color: map-get($font-color, "secondary");
       padding: 1rem 2rem;
       width: 100%;
@@ -107,7 +107,7 @@
       cursor: pointer;
       transition: all 0.2s linear;
 
-      &:hover{
+      &:hover {
         color: map-get($font-color, "primary");
         background-color: $light-purple;
       }
@@ -117,7 +117,6 @@
 
 .logo-sq {
   position: relative;
-  // left: 2rem;
   width: 3rem;
   height: 3rem;
   background-color: $light-purple;
@@ -136,9 +135,6 @@
   }
 }
 
-
-
-.active{
-  // color: #FFFF;
+.active {
   background-color: $light-purple;
 }
