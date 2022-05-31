@@ -7,10 +7,13 @@ body {
 }
 
 .container {
-  @include flex(row, space-between, center);
+  @include flex(row, space-evenly, center);
   @include border(none, 1.5rem);
+  // height: 100%;
   // width: 100%;
-  flex-wrap: wrap;
+  gap: 1rem;
+  flex-wrap: nowrap;
+  flex-basis: 99%;
   background-color: $primary-color;
-  padding: 3rem;
+  // padding: 3rem;
 }

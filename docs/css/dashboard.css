@@ -30,7 +30,7 @@ a {
 
 .container {
   width: 1400px;
-  max-width: 95%;
+  width: 85%;
   margin: 0 auto;
   padding: 1rem;
 }
@@ -48,18 +48,19 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   height: 90%;
+  gap: 2rem;
 }
 .main__title {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 80%;
+  width: 90%;
 }
 .main__title__left {
-  font-size: 3rem;
+  font-size: 2.8rem;
   font-weight: 500;
   color: rgb(35, 35, 35);
 }
@@ -70,14 +71,14 @@ html {
   margin: 0 0.5rem 0 0;
   outline: none;
   background-color: white;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   padding: 1rem;
 }
 .main__title__right .notifications {
   background: white;
   border: none;
   outline: none;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   cursor: pointer;
   color: rgb(116, 120, 127);
 }
@@ -94,11 +95,10 @@ html {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  width: 70rem;
 }
 .courses__title {
   margin: 0 0 1rem 0;
-  font-size: 2.2rem;
+  font-size: 2rem;
   font-weight: 450;
   color: rgb(35, 35, 35);
 }
@@ -109,8 +109,8 @@ html {
   justify-content: flex-start;
   align-items: flex-start;
   gap: 0.5rem;
-  padding: 1.5rem 1.5rem 3rem 1.5rem;
-  width: 22rem;
+  padding: 1.5rem 1.5rem 1rem 1.5rem;
+  width: 20rem;
 }
 .course__text {
   display: flex;
@@ -137,7 +137,7 @@ html {
   padding: 5rem 0 0 0;
 }
 .course__avatars .continue {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   color: #f7f7f7;
   padding: 0.8rem 1.5rem;
   border: 0.5px solid none;
@@ -221,6 +221,10 @@ html {
 
 .mycourses {
   width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 .mycourses__title {
   width: 99%;
@@ -230,7 +234,7 @@ html {
   align-items: flex-start;
 }
 .mycourses__title p {
-  font-size: 2.2rem;
+  font-size: 2rem;
   font-weight: 450;
   color: rgb(35, 35, 35);
 }
@@ -247,6 +251,7 @@ html {
 }
 .mycourses__grid .table__title {
   color: rgb(116, 120, 127);
+  align-self: flex-end;
 }
 
 .mycourse__logo {
@@ -255,37 +260,42 @@ html {
   border-radius: 1rem;
   display: grid;
   padding: 1.5rem;
-  font-size: 2.2rem;
+  font-size: 2rem;
   place-items: center;
 }
 
 .web-design__logo {
+  border-radius: 1rem;
   color: #8a70d6;
   background-color: #e9e3fe;
 }
 
 .web-dev__logo {
+  border-radius: 1rem;
   color: #579be4;
   background-color: #e5f3fe;
 }
 
 .python__logo {
+  border-radius: 1rem;
   color: #E193D8;
   background-color: #FFE3FB;
 }
 
 .html__logo {
+  border-radius: 1rem;
   color: #8a70d6;
   background-color: #e9e3fe;
 }
 
 .js__logo {
+  border-radius: 1rem;
   color: #fcab5e;
   background-color: #fff0e1;
 }
 
 .mycourse__text p {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 450;
   color: rgb(35, 35, 35);
 }
@@ -296,19 +306,19 @@ html {
 }
 
 .mycourse__date {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 450;
   color: rgb(35, 35, 35);
 }
 
 .mycourse__rate {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 450;
   color: rgb(35, 35, 35);
 }
 
 .mycourse__level {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 450;
   color: rgb(35, 35, 35);
 }
@@ -338,7 +348,7 @@ html {
   cursor: pointer;
 }
 .nav__logo h2 {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 450;
   color: rgb(35, 35, 35);
 }
@@ -361,7 +371,7 @@ html {
   border-radius: 1rem;
   cursor: pointer;
   color: rgb(116, 120, 127);
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 .nav__links .nav__link:hover {
   color: rgb(35, 35, 35);
@@ -384,7 +394,7 @@ html {
   padding: 2rem;
 }
 .nav__subscription .subscription__text h3 {
-  font-size: 2.2rem;
+  font-size: 2rem;
   font-weight: 450;
 }
 .nav__subscription .subscription__text p {
@@ -411,6 +421,11 @@ html {
   z-index: -2000;
 }
 
+.active {
+  color: rgb(35, 35, 35);
+  background-color: #e9e3fe;
+}
+
 body {
   display: flex;
   flex-direction: row;
@@ -423,13 +438,14 @@ body {
 .container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   border: 0.5px solid none;
   border-radius: 1.5rem;
-  flex-wrap: wrap;
+  gap: 1rem;
+  flex-wrap: nowrap;
+  flex-basis: 99%;
   background-color: #fcfbfc;
-  padding: 3rem;
 }
 
 .single-chart {
@@ -474,16 +490,43 @@ body {
 }
 
 .right {
-  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .pch {
-  width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
+  gap: 5vh;
   height: 99%;
+  background-color: #e9e3fe;
+  padding: 1rem;
+  border-radius: 2rem;
+}
+
+.calendar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.calendar__title {
+  font-size: 2rem;
+}
+.calendar input {
+  outline: none;
+  border: none;
+  border-radius: 1rem;
+  padding: 1rem;
+  font-size: 1.4rem;
+}
+.calendar input:focus {
+  outline: #8a70d6;
 }
 
 .homework {
@@ -491,6 +534,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 99%;
 }
 .homework__1 {
   display: flex;
@@ -506,7 +550,7 @@ body {
   gap: 1rem;
 }
 .homework__1__percent svg {
-  width: 22rem;
+  width: 60%;
 }
 .homework__2 {
   display: flex;
@@ -522,7 +566,7 @@ body {
   gap: 1rem;
 }
 .homework__2__percent svg {
-  width: 22rem;
+  width: 60%;
 }
 .homework__3 {
   display: flex;
@@ -538,9 +582,17 @@ body {
   gap: 1rem;
 }
 .homework__3__percent svg {
-  width: 22rem;
+  width: 60%;
 }
 
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+  height: 100%;
+}
 .profile__title {
   display: flex;
   flex-direction: row;
@@ -548,20 +600,51 @@ body {
   align-items: center;
   width: 100%;
   gap: 1rem;
-  font-size: 3rem;
+  font-size: 2.8rem;
   font-weight: 450;
   color: rgb(35, 35, 35);
 }
 .profile__title button {
   border: none;
+  border-radius: 1rem;
   outline: none;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 450;
   color: rgb(116, 120, 127);
   padding: 1rem;
   background-color: white;
   cursor: pointer;
+  transition: all 0.2s linear;
+}
+.profile__title button:hover {
+  background-color: #8a70d6;
+  color: #ffffff;
+}
+.profile__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+.profile__wrapper .profile__img {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 .profile__wrapper .profile__img img {
-  width: 10rem;
+  width: 18rem;
+  border-radius: 20rem;
+}
+.profile__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.profile__text .profile__name p {
+  font-size: 2rem;
+  font-weight: 450;
+  color: rgb(35, 35, 35);
 }

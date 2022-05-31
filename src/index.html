@@ -15,25 +15,26 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>Dashboard</title>
 </head>
 <body>
 <div class="container">
     <aside class="left">
         <nav class="nav">
-            <div class="nav__logo">
+            <div class="nav__logo animate__animated animate__backInDown">
                 <div class="logo-sq"></div>
                 <h2> ACADEMY</h2>  
             </div>
             <ul class="nav__links">
-                <li class="nav__link"><i class="fa-solid fa-table-cells-large"></i>Dashboard</li>
-                <li class="nav__link"><i class="fa-solid fa-graduation-cap"></i>Courses</li>
-                <li class="nav__link"><i class="fa-solid fa-comment"></i>Chats</li>
-                <li class="nav__link"><i class="fa-solid fa-chart-bar"></i>Grades</li>
-                <li class="nav__link"><i class="fa-solid fa-calendar-days"></i>Schedule</li>
+                <li class="nav__link animate__animated animate__zoomIn"><i class="fa-solid fa-table-cells-large"></i>Dashboard</li>
+                <li class="nav__link animate__animated animate__zoomIn animate__delay-1s"><i class="fa-solid fa-graduation-cap"></i>Courses</li>
+                <li class="nav__link animate__animated animate__zoomIn animate__delay-2s"><i class="fa-solid fa-comment"></i>Chats</li>
+                <li class="nav__link animate__animated animate__zoomIn animate__delay-3s"><i class="fa-solid fa-chart-bar"></i>Grades</li>
+                <li class="nav__link animate__animated animate__zoomIn animate__delay-4s"><i class="fa-solid fa-calendar-days animate__delay-5s"></i>Schedule</li>
                 <li class="nav__link"><i class="fa-solid fa-gear"></i>Settings</li>
             </ul>
-            <div class="nav__subscription">
+            <div class="nav__subscription animate__animated animate__slideInLeft">
                 <img src="./assets/dudeonlaptop.png" alt="">
                 <div class="subscription__text">
                     <h3>Premium subscription</h3>
@@ -46,7 +47,7 @@
 
     <main class="center">
         <section class="main">
-            <div class="main__title">
+            <div class="main__title animate__animated animate__slideInDown">
                 <h1 class="main__title__left">Dashboard</h1>
                 <div class="main__title__right">
                     <input type="text" placeholder="Search">
@@ -58,7 +59,7 @@
                     <p>New Courses</p>
                 </div>
                 <div class="main__courses__wrapper">
-                    <div class="course geography">
+                    <div class="course geography animate__animated animate__bounceInLeft">
                         <div class="course__img geo__img">
                             <img src="./assets/folded-map.svg" alt="geography image">
                         </div>
@@ -77,7 +78,7 @@
                         </div>
                     </div>
                     
-                    <div class="course js">
+                    <div class="course js animate__animated animate__zoomIn">
                         <div class="course__img js__img">
                             <img src="./assets/developper.svg" alt="js image">
                         </div>
@@ -97,7 +98,7 @@
                     </div>
 
 
-                    <div class="course photography">
+                    <div class="course photography animate__animated animate__lightSpeedInRight">
                         <div class="course__img photography__img">
                             <img src="./assets/camera-photo.svg" alt="photography image">
                         </div>
@@ -121,14 +122,14 @@
             </div>
 
             <div class="mycourses">
-                <div class="mycourses__title">
+                <div class="mycourses__title animate__animated animate__fadeInUpBig">
                     <p>My Courses</p>
                     <a href="#">View All</a>
                 </div>
 
-                </div>
+            <!-- </div> -->
 
-                <div class="mycourses__grid">
+                <div class="mycourses__grid animate__animated animate__fadeInUp animate__delay-1s">
                     <!-- <div class="table__head"> -->
                         <div></div>
                         <p class="table__title">Course name</p>
@@ -220,25 +221,25 @@
 
 
                 </div>
-            <!-- </div> -->
+            </div>
         </section>
     </main>
 
     <aside class="right">
         <section class="pch">
-            <div class="profile">
+            <div class="profile animate__animated animate__fadeInRight">
                 <div class="profile__title">
                     <p>Profile</p>
                     <button><i class="fa-solid fa-pen-to-square"></i></button>
                 </div>
                 <div class="profile__wrapper">
                     <div class="profile__img">
-                        <img src="./assets/3523417.png" alt="avatar">
+                        <img src="./assets/3523415.png" alt="avatar">
                     </div>
                     <div class="profile__text">
                        <div class="profile__name">
-                           <h3>Esther Howard</h3> 
-                        <i class="fa-solid fa-badge-check"></i>
+                           <p>Esther Howard</p> 
+                        <!-- <i class="fa-solid fa-check-double"></i> -->
                        </div>
                         <p class="profile__level">Elementary</p>
                     </div>  
@@ -246,15 +247,14 @@
             </div>
             <div class="calendar">
                 <div class="calendar__title">
-                    <h3>Choose a date</h3>
+                    <p>Choose a date</p>
                 </div>
                 <input class="calendar__body">
                     <!-- wtf! griiids -->
                 </input>
             </div>
-            <div class="homework">
-                <div class="homework__title">
-                </div>
+            <div class="homework animate__animated animate__backInRight">
+                
                 <div class="homework__items">
                     <div class="homework__1">
                         <div class="homework__1__percent">

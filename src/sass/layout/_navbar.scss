@@ -95,3 +95,10 @@
     z-index: -2000;
   }
 }
+
+
+
+.active{
+  color: map-get($font-color, "primary");
+  background-color: $light-purple;
+}

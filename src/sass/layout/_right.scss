@@ -43,31 +43,59 @@
   text-anchor: middle;
 }
 
+
+
+// start here!!
 .right{
-  height: 100%;
+  @include flex(column, center, center);
+  // height: 100%;
+  // width: 90%;
 }
 
-
 .pch{
-  width: 80%;
-  @include flex(column, space-between, flex-start);
+  // width: 80%;
+  @include flex(column, space-between, center);
+  gap: 5vh;
   height: 99%;
+  background-color: $light-purple;
+  padding:1rem;
+  border-radius:2rem
+
+}
+
+.calendar{
+  @include flex(column, center,center);
+  gap: 1rem;
+  &__title{
+    font-size: map-get($font-size, "l" )
+  }
+  input{
+    outline: none;
+    border: none;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-size: map-get($font-size, "m");
+
+    &:focus {
+      outline: $dark-purple;
+    }
+  }
 }
 
 .homework{
     @include flex(column, center, center);
-    // width: 95%;
+    width: 99%;
 
 &__1{
     @include flex(row, space-between, center);
 
     &__percent{
-        // width: 22rem;
+        // width: 22%;
         @include flex(row, flex-start, center);
         gap: 1rem;
 
         svg{
-          width: 22rem;
+          width: 60%;
         }
     }
 }
@@ -80,7 +108,7 @@
         gap: 1rem;
 
         svg{
-          width: 22rem;
+          width: 60%;
         }
     }
 }
@@ -89,11 +117,11 @@
     
     &__percent{
         @include flex(row, flex-start, center);
-        // width: 22rem;
+        // width: 22%;
         gap: 1rem;
 
         svg{
-          width: 22rem;
+          width: 60%;
         }
     }
 }
@@ -101,6 +129,9 @@
 
 
 .profile{
+  @include flex(column, space-between, center);
+  gap: 3rem;
+  height: 100%;
   &__title{
     @include flex(row, space-between, center);
     width: 100%;
@@ -111,6 +142,7 @@
 
       button{
         border: none;
+        border-radius: 1rem;
         outline: none;
         font-size: map-get($font-size, "ml" );
       font-weight: map-get($font-weight, "regular");
@@ -118,17 +150,51 @@
       padding: 1rem;
       background-color: #FFFF;
       cursor: pointer;
+      transition: all 0.2s linear;
+
+      &:hover{
+        background-color: $dark-purple;
+        color: $white;
+      }
       }
   }
 
   &__wrapper{
+    @include flex(column, space-between, center);
+    gap: 2rem;
     .profile__img{
+      @include flex(row, center, center);
+      // width: 20rem;
+      // border-radius: 20rem;
+      // background:red;
       img{
-        width: 10rem;
+        width: 18rem;
+        border-radius: 20rem;
   
       }
     }
 
+    
   }
+  
 
+
+  &__text{
+    @include flex(column, space-between, center);
+    .profile__name{
+    p{
+      font-size: map-get($font-size, "l" );
+    font-weight: map-get($font-weight, "regular");
+    color: map-get($font-color, "primary");
+
+    }
+
+
+    // i{
+    //   font-size: map-get($font-size, "ml" );
+    //   font-weight: map-get($font-weight, "regular");
+    //   color: map-get($font-color, "primary");
+    // }
+    }
+  }
 }
