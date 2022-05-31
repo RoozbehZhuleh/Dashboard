@@ -94,6 +94,7 @@ html {
   background-color: white;
   font-size: 1.6rem;
   padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .main__title__right .notifications {
   background: white;
