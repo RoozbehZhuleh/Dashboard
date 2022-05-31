@@ -218,8 +218,8 @@
 .mycourse__logo {
   width: 5rem;
   @include border(none, 1rem);
+  padding: 1.55rem;
   display: grid;
-  padding: 1.5rem;
   font-size: map-get($font-size, "l");
   place-items: center;
 }

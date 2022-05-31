@@ -2,7 +2,7 @@
 
 .single-chart {
   width: 33%;
-  justify-content: space-around ;
+  justify-content: space-around;
 }
 
 .circular-chart {
@@ -35,7 +35,6 @@
   stroke: $dark-blue;
 }
 
-
 .percentage {
   fill: #666;
   font-family: sans-serif;
@@ -43,35 +42,32 @@
   text-anchor: middle;
 }
 
-
-
 // start here!!
-.right{
+.right {
   @include flex(column, center, center);
   // height: 100%;
   // width: 90%;
 }
 
-.pch{
+.pch {
   width: 90%;
   @include flex(column, space-between, center);
   gap: 5vh;
   height: 99%;
   background-color: $light-purple;
-  padding:1rem;
-  transition: all .2s linear;
-  animation: blob 20s  4s infinite forwards;
-  border-radius: 2rem
-
+  padding: 1rem;
+  transition: all 0.2s linear;
+  animation: blob 20s 4s infinite forwards;
+  border-radius: 2rem;
 }
 
-.calendar{
-  @include flex(column, center,center);
+.calendar {
+  @include flex(column, center, center);
   gap: 1rem;
-  &__title{
-    font-size: map-get($font-size, "l" )
+  &__title {
+    font-size: map-get($font-size, "l");
   }
-  input{
+  input {
     outline: none;
     border: none;
     border-radius: 1rem;
@@ -84,151 +80,184 @@
   }
 }
 
-.homework{
-    @include flex(column, center, center);
-    width: 99%;
+.homework {
+  @include flex(column, center, center);
+  width: 99%;
+  background-color: rgba(200, 199, 200, 0.095);
+  backdrop-filter: blur(10px);
+  // border: rgba(164, 164, 164, 0.293) solid;
 
-&__1{
+  &__title {
+    p {
+      font-size: map-get($font-size, "l");
+    }
+  }
+
+  &__1 {
     @include flex(row, space-between, center);
+    padding: 1rem;
+    cursor: pointer;
 
-    &__percent{
-        // width: 22%;
-        @include flex(row, flex-start, center);
-        gap: 1rem;
-
-        svg{
-          width: 60%;
-        }
-    }
-
-    &__text{
-      p{
-        color: map-get($font-color, "primary" )
-      }
-      span{
-        color: map-get($font-color, "other" )
+    &__percent {
+      // width: 22%;
+      @include flex(row, flex-start, center);
+      gap: 1rem;
+      svg {
+        width: 60%;
       }
     }
 
-    &:hover{
-      color: white;
+    &__text {
+      p {
+        color: map-get($font-color, "primary");
+      }
+      span {
+        color: map-get($font-color, "other");
+      }
     }
-    
-}
-&__2{
+
+    &::before {
+      content: "";
+      height: 0;
+      width: 2px;
+      background-color: $dark-purple;
+      transition: all 0.2s linear;
+    }
+
+    &:hover::before {
+      height: 6rem;
+    }
+  }
+  &__2 {
     @include flex(row, space-between, center);
-    
-    &__percent{
-        @include flex(row, flex-start, center);
-        // width: 22rem;
-        gap: 1rem;
+    padding: 1rem;
+    cursor: pointer;
+     &__percent {
 
-        svg{
-          width: 60%;
-        }
-    }
-
-    &__text{
-      p{
-        color: map-get($font-color, "primary" )
-      }
-      span{
-        color: map-get($font-color, "other" )
+      @include flex(row, flex-start, center);
+      gap: 1rem;
+      svg {
+        width: 60%;
       }
     }
-}
-&__3{
+
+    &__text {
+      p {
+        color: map-get($font-color, "primary");
+      }
+      span {
+        color: map-get($font-color, "other");
+      }
+    }
+
+    &::before {
+      content: "";
+      height: 0;
+      width: 2px;
+      background-color: $dark-purple;
+      transition: all 0.2s linear;
+    }
+
+    &:hover::before {
+      height: 6rem;
+    }
+  }
+  &__3 {
     @include flex(row, space-between, center);
-    
-    &__percent{
-        @include flex(row, flex-start, center);
-        // width: 22%;
-        gap: 1rem;
-
-        svg{
-          width: 60%;
-        }
-    }
-
-    &__text{
-      p{
-        color: map-get($font-color, "primary" )
-      }
-      span{
-        color: map-get($font-color, "other" )
+    padding: 1rem;
+    cursor: pointer;
+      &__percent {
+      // width: 22%;
+      @include flex(row, flex-start, center);
+      gap: 1rem;
+      svg {
+        width: 60%;
       }
     }
-}
+
+    &__text {
+      p {
+        color: map-get($font-color, "primary");
+      }
+      span {
+        color: map-get($font-color, "other");
+      }
+    }
+
+    &::before {
+      content: "";
+      height: 0;
+      width: 2px;
+      background-color: $dark-purple;
+      transition: all 0.2s linear;
+    }
+
+    &:hover::before {
+      height: 6rem;
+    }
+  }
 }
 
-
-.profile{
+.profile {
   @include flex(column, space-between, center);
-  gap: 3rem;
+  gap: 1rem;
   height: 100%;
-  &__title{
+  &__title {
     @include flex(row, space-between, center);
-    width: 100%;
+    width: 150%;
     gap: 1rem;
-    font-size: map-get($font-size, "xl" );
-      font-weight: map-get($font-weight, "regular");
-      color: map-get($font-color, "primary");
+    font-size: map-get($font-size, "xl");
+    font-weight: map-get($font-weight, "regular");
+    color: map-get($font-color, "primary");
 
-      button{
-        border: none;
-        border-radius: 1rem;
-        outline: none;
-        font-size: map-get($font-size, "ml" );
+    button {
+      border: none;
+      border-radius: 1rem;
+      outline: none;
+      font-size: map-get($font-size, "ml");
       font-weight: map-get($font-weight, "regular");
       color: map-get($font-color, "other");
       padding: 1rem;
-      background-color: #FFFF;
+      background-color: #ffff;
       cursor: pointer;
       transition: all 0.2s linear;
 
-      &:hover{
+      &:hover {
         background-color: $dark-purple;
         color: $white;
       }
-      }
+    }
   }
 
-  &__wrapper{
+  &__wrapper {
     @include flex(column, space-between, center);
     gap: 2rem;
-    .profile__img{
+    .profile__img {
       @include flex(row, center, center);
       // width: 20rem;
       // border-radius: 20rem;
       // background:red;
-      img{
-        width: 18rem;
+      img {
+        width: 15rem;
         border-radius: 20rem;
-  
       }
     }
-
-    
   }
-  
 
-
-  &__text{
+  &__text {
     @include flex(column, space-between, center);
-    .profile__name{
-    p{
-      font-size: map-get($font-size, "l" );
-    font-weight: map-get($font-weight, "regular");
-    color: map-get($font-color, "primary");
+    .profile__name {
+      p {
+        font-size: map-get($font-size, "l");
+        font-weight: map-get($font-weight, "regular");
+        color: map-get($font-color, "primary");
+      }
 
-    }
-
-
-    // i{
-    //   font-size: map-get($font-size, "ml" );
-    //   font-weight: map-get($font-weight, "regular");
-    //   color: map-get($font-color, "primary");
-    // }
+      // i{
+      //   font-size: map-get($font-size, "ml" );
+      //   font-weight: map-get($font-weight, "regular");
+      //   color: map-get($font-color, "primary");
+      // }
     }
   }
 }

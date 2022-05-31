@@ -29,7 +29,7 @@ a {
 }
 
 .container {
-  width: 1400px;
+  width: 1500px;
   max-width: 90%;
   margin: auto;
   padding: 1rem;
@@ -41,15 +41,19 @@ a {
   }
   25% {
     border-radius: 31% 69% 55% 45%/14% 73% 27% 86%;
+    background-color: #fff0e1;
   }
   50% {
     border-radius: 68% 32% 35% 65%/50% 25% 75% 50%;
+    background-color: #e5f3fe;
   }
   75% {
     border-radius: 0% 100% 0% 100%/99% 0% 100% 1%;
+    background-color: #FFE3FB;
   }
   100% {
-    border-radius: 57% 43% 21% 79%/30% 53% 47% 70%;
+    border-radius: 31% 69% 55% 45%/14% 73% 27% 86%;
+    background-color: #e9e3fe;
   }
 }
 html {
@@ -276,8 +280,8 @@ html {
   width: 5rem;
   border: 0.5px solid none;
   border-radius: 1rem;
+  padding: 1.55rem;
   display: grid;
-  padding: 1.5rem;
   font-size: 2rem;
   place-items: center;
 }
@@ -501,10 +505,15 @@ body {
   align-items: center;
   border: 0.5px solid none;
   border-radius: 1.5rem;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   background-color: #fcfbfc;
 }
 
+@media screen and (max-width: 1200px) {
+  .container {
+    flex-wrap: wrap;
+  }
+}
 .single-chart {
   width: 33%;
   justify-content: space-around;
@@ -595,12 +604,19 @@ body {
   justify-content: center;
   align-items: center;
   width: 99%;
+  background-color: rgba(200, 199, 200, 0.095);
+  backdrop-filter: blur(10px);
+}
+.homework__title p {
+  font-size: 2rem;
 }
 .homework__1 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  padding: 1rem;
+  cursor: pointer;
 }
 .homework__1__percent {
   display: flex;
@@ -618,14 +634,23 @@ body {
 .homework__1__text span {
   color: rgb(116, 120, 127);
 }
-.homework__1:hover {
-  color: white;
+.homework__1::before {
+  content: "";
+  height: 0;
+  width: 2px;
+  background-color: #8a70d6;
+  transition: all 0.2s linear;
+}
+.homework__1:hover::before {
+  height: 6rem;
 }
 .homework__2 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  padding: 1rem;
+  cursor: pointer;
 }
 .homework__2__percent {
   display: flex;
@@ -643,11 +668,23 @@ body {
 .homework__2__text span {
   color: rgb(116, 120, 127);
 }
+.homework__2::before {
+  content: "";
+  height: 0;
+  width: 2px;
+  background-color: #8a70d6;
+  transition: all 0.2s linear;
+}
+.homework__2:hover::before {
+  height: 6rem;
+}
 .homework__3 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  padding: 1rem;
+  cursor: pointer;
 }
 .homework__3__percent {
   display: flex;
@@ -665,13 +702,23 @@ body {
 .homework__3__text span {
   color: rgb(116, 120, 127);
 }
+.homework__3::before {
+  content: "";
+  height: 0;
+  width: 2px;
+  background-color: #8a70d6;
+  transition: all 0.2s linear;
+}
+.homework__3:hover::before {
+  height: 6rem;
+}
 
 .profile {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  gap: 3rem;
+  gap: 1rem;
   height: 100%;
 }
 .profile__title {
@@ -679,7 +726,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 150%;
   gap: 1rem;
   font-size: 2.8rem;
   font-weight: 450;
@@ -715,7 +762,7 @@ body {
   align-items: center;
 }
 .profile__wrapper .profile__img img {
-  width: 18rem;
+  width: 15rem;
   border-radius: 20rem;
 }
 .profile__text {
