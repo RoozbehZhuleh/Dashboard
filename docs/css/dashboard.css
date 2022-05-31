@@ -337,7 +337,7 @@ html {
   justify-content: space-between;
   align-items: flex-start;
   height: 99%;
-  gap: 2rem;
+  gap: 4rem;
 }
 .nav__logo {
   display: flex;
