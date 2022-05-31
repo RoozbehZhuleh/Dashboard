@@ -273,7 +273,7 @@ html {
 }
 .mycourses__grid .table__title {
   color: rgb(116, 120, 127);
-  align-self: flex-end;
+  align-self: center;
 }
 
 .mycourse__logo {
