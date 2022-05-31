@@ -102,6 +102,13 @@ html {
   font-size: 1.6rem;
   cursor: pointer;
   color: rgb(116, 120, 127);
+  padding: 1rem;
+  border-radius: 1rem;
+  transition: all 0.2s linear;
+}
+.main__title__right .notifications:hover {
+  background-color: #8a70d6;
+  color: white;
 }
 .main__courses__wrapper {
   display: flex;
@@ -168,14 +175,29 @@ html {
 
 .geography__button {
   background-color: #fcab5e;
+  transition: all 0.2s linear;
+}
+.geography__button:hover {
+  background-color: #fff0e1;
+  color: #fcab5e;
 }
 
 .js__button {
   background-color: #8a70d6;
+  transition: all 0.2s linear;
+}
+.js__button:hover {
+  background-color: #e9e3fe;
+  color: #8a70d6;
 }
 
 .photography__button {
   background-color: #579be4;
+  transition: all 0.2s linear;
+}
+.photography__button:hover {
+  background-color: #e5f3fe;
+  color: #579be4;
 }
 
 .avatars img {

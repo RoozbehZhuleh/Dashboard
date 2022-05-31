@@ -39,6 +39,14 @@
         font-size: map-get($font-size, "ml");
         cursor: pointer;
         color: map-get($font-color, "other");
+        padding:1rem;
+        border-radius: 1rem;
+        transition: all 0.2s linear;
+
+        &:hover{
+          background-color: $dark-purple;
+          color: #ffff;
+        }
       }
     }
   }
@@ -100,14 +108,32 @@
 
 .geography__button {
   background-color: $dark-orange;
+  transition: all 0.2s linear;
+  &:hover{
+    background-color:$light-orange;
+    color: $dark-orange;
+    
+  }
 }
 
 .js__button{
   background-color: $dark-purple;
+  transition: all 0.2s linear;
+  &:hover{
+    background-color:$light-purple;
+    color: $dark-purple;
+    
+  }
 }
 
 .photography__button{
   background-color: $dark-blue;
+  transition: all 0.2s linear;
+  &:hover{
+    background-color:$light-blue;
+    color: $dark-blue;
+    
+  }
 }
 
 .avatars {
