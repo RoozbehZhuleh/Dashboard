@@ -628,6 +628,7 @@ body {
   width: 99%;
   background-color: rgba(200, 199, 200, 0.095);
   backdrop-filter: blur(10px);
+  border-radius: 1rem;
 }
 .homework__title p {
   font-size: 2rem;

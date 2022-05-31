@@ -50,6 +50,7 @@
 }
 
 .pch {
+  // backdrop-filter: blur(10px);
   width: 90%;
   @include flex(column, space-between, center);
   gap: 5vh;
@@ -59,6 +60,7 @@
   transition: all 0.2s linear;
   animation: blob 20s 4s infinite forwards;
   border-radius: 2rem;
+
 }
 
 .calendar {
@@ -85,7 +87,7 @@
   width: 99%;
   background-color: rgba(200, 199, 200, 0.095);
   backdrop-filter: blur(10px);
-  // border: rgba(164, 164, 164, 0.293) solid;
+  border-radius: 1rem;
 
   &__title {
     p {
