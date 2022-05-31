@@ -7,14 +7,21 @@
 
 .nav {
   @include flex(column, space-between, flex-start);
-  height: 100%;
-  // gap: 10rem;
+  height: 99%;
+  gap: 2rem;
   // position: relative;
   // top: -5rem;
 
   &__logo {
     @include flex(row, space-between, center);
     gap: 4rem;
+    cursor:pointer;
+
+    h2{
+      font-size: map-get($font-size, "ml" );
+      font-weight: map-get($font-weight, "regular");
+      color: map-get($font-color, "primary")
+    }
   }
 
   &__links {

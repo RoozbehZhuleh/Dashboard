@@ -1,13 +1,24 @@
 @import "../utilities/utilities";
 
+.center{
+  height: 100%;
+}
+
 .main {
-  @include flex(column, flex-end, flex-start);
-  gap: 5rem;
+  @include flex(column, space-between, flex-start);
+  height: 90%;
+  // gap: 5rem;
 
   &__title {
     @include flex(row, space-between, center);
     // gap:2rem;
     width: 80%;
+
+    &__left {
+      font-size: map-get($font-size, "xl" );
+      font-weight: 500;
+      color: map-get($font-color, "primary")
+    }
 
     &__right {
       input {
@@ -44,6 +55,9 @@
 
   &__title {
     margin: 0 0 1rem 0;
+    font-size: map-get($font-size, "l" );
+    font-weight: map-get($font-weight, "regular");
+    color: map-get($font-color, "primary")
   }
 }
 
@@ -54,6 +68,8 @@
   width: 22rem;
 
   &__text {
+    @include flex(column, flex-start, flex-start);
+    gap: 0.5rem;
     padding: 0.5rem 0 0 0;
     h3 {
       font-size: 1.5rem;
@@ -145,12 +161,20 @@
 
 
 .mycourses{
-  width: 80%;
+  width: 90%;
 
 
   &__title{
-    width: 100%;
-    @include flex(row, space-between, flex-start)
+    width: 99%;
+    @include flex(row, space-between, flex-start);
+    p{
+      font-size: map-get($font-size, "l" );
+        font-weight: map-get($font-weight, "regular");
+        color: map-get($font-color, "primary")
+    }
+    a{
+      text-decoration: none;
+    }
   }
 }
 
@@ -200,4 +224,34 @@
 .js__logo{
   color: $dark-orange;
   background-color: $light-orange;
+}
+
+.mycourse__text{
+  p{
+    font-size: map-get($font-size, "ml" );
+        font-weight: map-get($font-weight, "regular");
+        color: map-get($font-color, "primary")
+
+  }
+  span{
+    font-size: map-get($font-size, "m" );
+      font-weight: map-get($font-weight, "regular");
+      color: map-get($font-color, "other")
+  }
+}
+
+.mycourse__date{
+  font-size: map-get($font-size, "ml" );
+      font-weight: map-get($font-weight, "regular");
+      color: map-get($font-color, "primary")
+}
+.mycourse__rate{
+  font-size: map-get($font-size, "ml" );
+      font-weight: map-get($font-weight, "regular");
+      color: map-get($font-color, "primary")
+}
+.mycourse__level{
+  font-size: map-get($font-size, "ml" );
+      font-weight: map-get($font-weight, "regular");
+      color: map-get($font-color, "primary")
 }

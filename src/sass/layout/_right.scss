@@ -43,21 +43,32 @@
   text-anchor: middle;
 }
 
+.right{
+  height: 100%;
+}
 
 
-
-
+.pch{
+  width: 80%;
+  @include flex(column, space-between, flex-start);
+  height: 99%;
+}
 
 .homework{
     @include flex(column, center, center);
-    width: 95%;
+    // width: 95%;
 
 &__1{
     @include flex(row, space-between, center);
 
     &__percent{
-        width: 22rem;
+        // width: 22rem;
         @include flex(row, flex-start, center);
+        gap: 1rem;
+
+        svg{
+          width: 22rem;
+        }
     }
 }
 &__2{
@@ -65,7 +76,12 @@
     
     &__percent{
         @include flex(row, flex-start, center);
-        width: 22rem;
+        // width: 22rem;
+        gap: 1rem;
+
+        svg{
+          width: 22rem;
+        }
     }
 }
 &__3{
@@ -73,7 +89,46 @@
     
     &__percent{
         @include flex(row, flex-start, center);
-        width: 22rem;
+        // width: 22rem;
+        gap: 1rem;
+
+        svg{
+          width: 22rem;
+        }
     }
 }
+}
+
+
+.profile{
+  &__title{
+    @include flex(row, space-between, center);
+    width: 100%;
+    gap: 1rem;
+    font-size: map-get($font-size, "xl" );
+      font-weight: map-get($font-weight, "regular");
+      color: map-get($font-color, "primary");
+
+      button{
+        border: none;
+        outline: none;
+        font-size: map-get($font-size, "ml" );
+      font-weight: map-get($font-weight, "regular");
+      color: map-get($font-color, "other");
+      padding: 1rem;
+      background-color: #FFFF;
+      cursor: pointer;
+      }
+  }
+
+  &__wrapper{
+    .profile__img{
+      img{
+        width: 10rem;
+  
+      }
+    }
+
+  }
+
 }
