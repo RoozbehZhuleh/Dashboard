@@ -224,6 +224,7 @@
 }
 
 .mycourses__grid {
+  padding: 0 0 0 2rem;
   width: 90%;
   display: grid;
   grid-template-columns: 1fr 5fr 2fr 2fr 2fr;
@@ -233,6 +234,10 @@
   .table__title{
     color: map-get($font-color, "other" );
     align-self: center;
+  }
+
+  &:nth-child(n){
+    background: red
   }
 
   //  grid-template-areas:

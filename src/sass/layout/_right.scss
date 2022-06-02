@@ -25,11 +25,7 @@
   animation: progress 1s ease-out forwards;
 }
 
-@keyframes progress {
-  0% {
-    stroke-dasharray: 0 100;
-  }
-}
+
 
 .circular-chart .circle {
   stroke: $dark-blue;
@@ -60,6 +56,17 @@
   transition: all 0.2s linear;
   animation: blob 20s 4s infinite forwards;
   border-radius: 2rem;
+  position: relative;
+
+  &::before{
+    content: "";
+    width: 100%;
+    height: 102.5%;
+    background-color: rgba(200, 199, 200, 0.04);
+  backdrop-filter: blur(10px);
+  position: absolute;
+  top: -1.25%; 
+  }
 
 }
 
@@ -67,7 +74,12 @@
   @include flex(column, center, center);
   gap: 1rem;
   &__title {
-    font-size: map-get($font-size, "l");
+    p{
+
+      font-size: clamp(map-get($font-size, "m"), map-get($font-size, "l"), map-get($font-size, "xl"));
+
+      font-weight: map-get($font-weight, "bold" );
+    }
   }
   input {
     outline: none;
@@ -85,8 +97,8 @@
 .homework {
   @include flex(column, center, center);
   width: 99%;
-  background-color: rgba(200, 199, 200, 0.095);
-  backdrop-filter: blur(10px);
+  // background-color: rgba(200, 199, 200, 0.095);
+  // backdrop-filter: blur(10px);
   border-radius: 1rem;
 
   &__title {

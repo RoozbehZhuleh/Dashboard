@@ -1,5 +1,31 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Square+Peg&display=swap");
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+@keyframes blob {
+  0% {
+    border-radius: 2rem;
+  }
+  25% {
+    border-radius: 31% 69% 55% 45%/14% 73% 27% 86%;
+    background-color: #fff0e1;
+  }
+  50% {
+    border-radius: 68% 32% 35% 65%/50% 25% 75% 50%;
+    background-color: #e5f3fe;
+  }
+  75% {
+    border-radius: 0% 100% 0% 100%/99% 0% 100% 1%;
+    background-color: #ffe3fb;
+  }
+  100% {
+    border-radius: 31% 69% 55% 45%/14% 73% 27% 86%;
+    background-color: #e9e3fe;
+  }
+}
 *,
 *::after,
 *::before {
@@ -35,6 +61,16 @@ a {
   padding: 1rem;
 }
 
+html {
+  font-size: 62.5%;
+  font-family: "ًRoboto", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
 @keyframes blob {
   0% {
     border-radius: 2rem;
@@ -49,18 +85,39 @@ a {
   }
   75% {
     border-radius: 0% 100% 0% 100%/99% 0% 100% 1%;
-    background-color: #FFE3FB;
+    background-color: #ffe3fb;
   }
   100% {
     border-radius: 31% 69% 55% 45%/14% 73% 27% 86%;
     background-color: #e9e3fe;
   }
 }
-html {
-  font-size: 62.5%;
-  font-family: "ًRoboto", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
 }
-
+@keyframes blob {
+  0% {
+    border-radius: 2rem;
+  }
+  25% {
+    border-radius: 31% 69% 55% 45%/14% 73% 27% 86%;
+    background-color: #fff0e1;
+  }
+  50% {
+    border-radius: 68% 32% 35% 65%/50% 25% 75% 50%;
+    background-color: #e5f3fe;
+  }
+  75% {
+    border-radius: 0% 100% 0% 100%/99% 0% 100% 1%;
+    background-color: #ffe3fb;
+  }
+  100% {
+    border-radius: 31% 69% 55% 45%/14% 73% 27% 86%;
+    background-color: #e9e3fe;
+  }
+}
 .center {
   height: 80%;
 }
@@ -288,6 +345,7 @@ html {
 }
 
 .mycourses__grid {
+  padding: 0 0 0 2rem;
   width: 90%;
   display: grid;
   grid-template-columns: 1fr 5fr 2fr 2fr 2fr;
@@ -297,6 +355,9 @@ html {
 .mycourses__grid .table__title {
   color: rgb(116, 120, 127);
   align-self: center;
+}
+.mycourses__grid:nth-child(n) {
+  background: red;
 }
 
 .mycourse__logo {
@@ -368,6 +429,32 @@ html {
   color: rgb(35, 35, 35);
 }
 
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+@keyframes blob {
+  0% {
+    border-radius: 2rem;
+  }
+  25% {
+    border-radius: 31% 69% 55% 45%/14% 73% 27% 86%;
+    background-color: #fff0e1;
+  }
+  50% {
+    border-radius: 68% 32% 35% 65%/50% 25% 75% 50%;
+    background-color: #e5f3fe;
+  }
+  75% {
+    border-radius: 0% 100% 0% 100%/99% 0% 100% 1%;
+    background-color: #ffe3fb;
+  }
+  100% {
+    border-radius: 31% 69% 55% 45%/14% 73% 27% 86%;
+    background-color: #e9e3fe;
+  }
+}
 .left {
   display: flex;
   flex-direction: column;
@@ -512,6 +599,32 @@ html {
   background-color: #e9e3fe;
 }
 
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+@keyframes blob {
+  0% {
+    border-radius: 2rem;
+  }
+  25% {
+    border-radius: 31% 69% 55% 45%/14% 73% 27% 86%;
+    background-color: #fff0e1;
+  }
+  50% {
+    border-radius: 68% 32% 35% 65%/50% 25% 75% 50%;
+    background-color: #e5f3fe;
+  }
+  75% {
+    border-radius: 0% 100% 0% 100%/99% 0% 100% 1%;
+    background-color: #ffe3fb;
+  }
+  100% {
+    border-radius: 31% 69% 55% 45%/14% 73% 27% 86%;
+    background-color: #e9e3fe;
+  }
+}
 body {
   display: flex;
   flex-direction: row;
@@ -535,6 +648,32 @@ body {
 @media screen and (max-width: 1200px) {
   .container {
     flex-wrap: wrap;
+  }
+}
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+@keyframes blob {
+  0% {
+    border-radius: 2rem;
+  }
+  25% {
+    border-radius: 31% 69% 55% 45%/14% 73% 27% 86%;
+    background-color: #fff0e1;
+  }
+  50% {
+    border-radius: 68% 32% 35% 65%/50% 25% 75% 50%;
+    background-color: #e5f3fe;
+  }
+  75% {
+    border-radius: 0% 100% 0% 100%/99% 0% 100% 1%;
+    background-color: #ffe3fb;
+  }
+  100% {
+    border-radius: 31% 69% 55% 45%/14% 73% 27% 86%;
+    background-color: #e9e3fe;
   }
 }
 .single-chart {
@@ -562,11 +701,6 @@ body {
   animation: progress 1s ease-out forwards;
 }
 
-@keyframes progress {
-  0% {
-    stroke-dasharray: 0 100;
-  }
-}
 .circular-chart .circle {
   stroke: #579be4;
 }
@@ -598,6 +732,16 @@ body {
   transition: all 0.2s linear;
   animation: blob 20s 4s infinite forwards;
   border-radius: 2rem;
+  position: relative;
+}
+.pch::before {
+  content: "";
+  width: 100%;
+  height: 102.5%;
+  background-color: rgba(200, 199, 200, 0.04);
+  backdrop-filter: blur(10px);
+  position: absolute;
+  top: -1.25%;
 }
 
 .calendar {
@@ -607,8 +751,9 @@ body {
   align-items: center;
   gap: 1rem;
 }
-.calendar__title {
+.calendar__title p {
   font-size: 2rem;
+  font-weight: 700;
 }
 .calendar input {
   outline: none;
@@ -627,8 +772,6 @@ body {
   justify-content: center;
   align-items: center;
   width: 99%;
-  background-color: rgba(200, 199, 200, 0.095);
-  backdrop-filter: blur(10px);
   border-radius: 1rem;
 }
 .homework__title p {
