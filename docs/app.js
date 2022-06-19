@@ -18,7 +18,7 @@ navLink.forEach(i => {
         i.classList.toggle("active");
 
     })
-});
+})
 
 
 // course.addEventListener("mouseover", () => {

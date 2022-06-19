@@ -356,9 +356,6 @@ html {
   color: rgb(116, 120, 127);
   align-self: center;
 }
-.mycourses__grid:nth-child(n) {
-  background: red;
-}
 
 .mycourse__logo {
   width: 5rem;
