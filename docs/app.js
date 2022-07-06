@@ -15,7 +15,11 @@ const course = document.querySelector(".course");
 
 navLink.forEach(i => {
     i.addEventListener("click", function () {
-        i.classList.toggle("active");
+        navLink.forEach(i => {
+            i.classList.remove("active");
+        });
+
+        i.classList.add("active");
 
     })
 })

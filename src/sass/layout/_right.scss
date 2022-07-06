@@ -25,8 +25,6 @@
   animation: progress 1s ease-out forwards;
 }
 
-
-
 .circular-chart .circle {
   stroke: $dark-blue;
 }
@@ -58,27 +56,29 @@
   border-radius: 2rem;
   position: relative;
 
-  &::before{
+  &::before {
     content: "";
     width: 100%;
     height: 102.5%;
     background-color: rgba(200, 199, 200, 0.04);
-  backdrop-filter: blur(10px);
-  position: absolute;
-  top: -1.25%; 
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: -1.25%;
   }
-
 }
 
 .calendar {
   @include flex(column, center, center);
   gap: 1rem;
   &__title {
-    p{
+    p {
+      font-size: clamp(
+        map-get($font-size, "m"),
+        map-get($font-size, "l"),
+        map-get($font-size, "xl")
+      );
 
-      font-size: clamp(map-get($font-size, "m"), map-get($font-size, "l"), map-get($font-size, "xl"));
-
-      font-weight: map-get($font-weight, "bold" );
+      font-weight: map-get($font-weight, "bold");
     }
   }
   input {
@@ -146,8 +146,7 @@
     @include flex(row, space-between, center);
     padding: 1rem;
     cursor: pointer;
-     &__percent {
-
+    &__percent {
       @include flex(row, flex-start, center);
       gap: 1rem;
       svg {
@@ -180,7 +179,7 @@
     @include flex(row, space-between, center);
     padding: 1rem;
     cursor: pointer;
-      &__percent {
+    &__percent {
       // width: 22%;
       @include flex(row, flex-start, center);
       gap: 1rem;
